@@ -1,0 +1,6 @@
+# Geheimnisse nie ins Repo
+geheim/
+*.env
+.env
+**/venv/
+__pycache__/

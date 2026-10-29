@@ -1,0 +1,50 @@
+flowchart TD
+  D["DC=ec2,DC=andrija,DC=m159<br/>(Domäne ec2.andrija.m159)"]
+  F["OU=Andrija_AG"]
+  I["OU=Intern"]
+  E["OU=Extern"]
+  GR["OU=Gruppen"]
+  SV["OU=Dienstkonten"]
+  S["OU=Sekretariat"]
+  B["OU=Buchhaltung"]
+  G["OU=GL"]
+  P["OU=Promoter"]
+  SB["OU=Sekretariat_Benutzer"]
+  SC["OU=Sekretariat_Computer"]
+  BB["OU=Buchhaltung_Benutzer"]
+  BC["OU=Buchhaltung_Computer"]
+  GB["OU=GL_Benutzer"]
+  GC["OU=GL_Computer"]
+  PB["OU=Promoter_Benutzer"]
+  PC["OU=Promoter_Computer"]
+  U1(["CN=Paul Roth (proth)<br/>DN: CN=Paul Roth,OU=Promoter_Benutzer,OU=Promoter,<br/>OU=Extern,OU=Andrija_AG,DC=ec2,DC=andrija,DC=m159"])
+  C1(["CN=CLIENT-ANDRIJA<br/>DN: CN=CLIENT-ANDRIJA,OU=Sekretariat_Computer,OU=Sekretariat,<br/>OU=Intern,OU=Andrija_AG,DC=ec2,DC=andrija,DC=m159"])
+  U2(["CN=Sandra Keller (skeller)"])
+  U3(["CN=Beat Huber (bhuber)"])
+  U4(["CN=Gabriel Lang (glang)"])
+  D --> F
+  F --> I
+  F --> E
+  F --> GR
+  F --> SV
+  I --> S
+  I --> B
+  I --> G
+  E --> P
+  S --> SB
+  S --> SC
+  B --> BB
+  B --> BC
+  G --> GB
+  G --> GC
+  P --> PB
+  P --> PC
+  PB --> U1
+  SC --> C1
+  SB --> U2
+  BB --> U3
+  GB --> U4
+  classDef ou fill:#e8f1ff,stroke:#3b6fb6,color:#000
+  classDef obj fill:#fff6e0,stroke:#c08a00,color:#000
+  class D,F,I,E,GR,SV,S,B,G,P,SB,SC,BB,BC,GB,GC,PB,PC ou
+  class U1,C1,U2,U3,U4 obj

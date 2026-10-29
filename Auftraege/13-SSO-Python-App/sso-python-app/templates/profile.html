@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>SSO-Applikation Version 1.0</title>
+  <style>
+    body { font-family: Segoe UI, Arial, sans-serif; margin: 2rem; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: .4rem .8rem; text-align: left; }
+    th { background: #eef3fb; }
+  </style>
+</head>
+<body>
+  <h1>SSO-Applikation Version 1.0</h1>
+  <h2>Login erfolgreich!</h2>
+  <table>
+    <tr><th>Feld</th><th>Wert</th></tr>
+    {% for key, value in profile.items() %}
+    <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
