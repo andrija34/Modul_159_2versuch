@@ -39,4 +39,4 @@ Kennwörter, Trust-Passwort und Client Secret sind **nicht** im Repository (`.gi
 
 ## KI-Einsatz
 
-Das Design der README's wurde mit KI erstellt; alle technischen Nachweise stammen aus der eigenen AWS-/Azure-Umgebung.
+Das Design der README's wurde mit KI erstellt. Einige Aufträge wurden mit KI bescprochen, damit Sie mir Unklarheiten auflösen konnte. Die Scripts wurden von der KI überprüft bevor man sie ausführte; alle technischen Nachweise stammen aus der eigenen AWS-/Azure-Umgebung.
